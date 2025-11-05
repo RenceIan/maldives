@@ -7,39 +7,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="home.css">
-    <!-- Montserrat font (brand font); page styles moved to home.css for better organization -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
   </head>
-  <body class="has-navbar">
+  <body id="top" class="has-navbar theme-renceian">
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html">Maldives</a>
+        <a class="navbar-brand" href="#top">Maldives</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="stay.html">Stay</a></li>
-            <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#top">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#stay">Stay</a></li>
+            <li class="nav-item"><a class="nav-link" href="#discover">Discover</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <main class="container mt-4">
-      <!-- Hero image (page showcase) - enhanced to match reference -->
+      
       <section class="home-hero mb-4">
         <img src="src/home.jpg" alt="Maldives hero" class="home-hero-img img-fluid">
-
-        <!-- Centered info row moved below the image (kept here originally) -->
+        
       </section>
-
-      <!-- Centered info row (logo / time / date / temp) - now placed below the picture so it doesn't sit on top of the photo -->
+      
       <div class="hero-info">
         <div class="row gx-3">
           <div class="col-auto logo">
-            <!-- small inline pin icon -->
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <path d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6z" fill="#0aa8b0"/>
               <circle cx="12" cy="8" r="2" fill="#fff"/>
@@ -61,49 +57,49 @@
         </div>
       </div>
 
-      <h2 class="page-section-title">STAY</h2>
-      <!-- Grid: 4 columns with thumbnails -->
-      <section class="row mt-4 gx-4 gy-4" aria-label="Main sections">
+  <h2 id="stay" class="page-section-title">STAY</h2>
+  
+  <section id="section-stay" class="row stay mt-4 gx-4 gy-4" aria-label="Main sections">
         <article class="col-12 col-md-3">
           <div class="grid-card p-0 h-100">
             <div class="card-thumb"><img src="src/kubo.jpg" alt="Resorts"></div>
             <div class="p-3">
               <h3 class="card-title">RESORTS</h3>
-              <p class="card-excerpt">From clublike resorts to chic boutique resorts, from those which offer family fun to those that are...</p>
-              
+              <p class="card-excerpt">From clublike resorts to chic boutique resorts, from those which offer family fun to those that are designed purely for couples and romantic, adults-only getaways.</p>
+              <p><a href="#" class="see-more" aria-expanded="false">See more</a></p>
             </div>
           </div>
         </article>
 
         <article class="col-12 col-md-3">
           <div class="grid-card p-0 h-100">
-            <div class="card-thumb"><img src="src/home.jpg" alt="Hotels"></div>
+            <div class="card-thumb"><img src="src/hotels.jpg" alt="Hotels"></div>
             <div class="p-3">
               <h3 class="card-title">HOTELS</h3>
-              <p class="card-excerpt">If you are visiting the Maldives on business, staying at a hotel in Malé is convenient. A range of...</p>
-              
+              <p class="card-excerpt">If you are visiting the Maldives on business, staying at a hotel in Malé is convenient. A range of budget-friendly guesthouses and three-to-four-star business hotels are available for easy access to government and commerce centers.</p>
+              <p><a href="#" class="see-more" aria-expanded="false">See more</a></p>
             </div>
           </div>
         </article>
 
         <article class="col-12 col-md-3">
           <div class="grid-card p-0 h-100">
-            <div class="card-thumb"><img src="src/poster.jpg" alt="Liveaboards"></div>
+            <div class="card-thumb"><img src="src/live.jpg" alt="Liveaboards"></div>
             <div class="p-3">
               <h3 class="card-title">LIVEABOARDS</h3>
-              <p class="card-excerpt">Liveaboards offer you the opportunity to see more of the Maldives. Liveaboards offer dedicated surf...</p>
-              
+              <p class="card-excerpt">Liveaboards offer you the opportunity to see more of the Maldives. Liveaboards offer dedicated surf trips and specialized diving safaris for exploring remote atolls.</p>
+              <p><a href="#" class="see-more" aria-expanded="false">See more</a></p>
             </div>
           </div>
         </article>
 
         <article class="col-12 col-md-3">
           <div class="grid-card p-0 h-100">
-            <div class="card-thumb"><img src="src/kubo.jpg" alt="Guesthouses"></div>
+            <div class="card-thumb"><img src="src/guesthouse.jpg" alt="Guesthouses"></div>
             <div class="p-3">
               <h3 class="card-title">GUESTHOUSES</h3>
-              <p class="card-excerpt">A guesthouse stay offers a different experience. Your stay will be in a local town where you would g...</p>
-              
+              <p class="card-excerpt">A guesthouse stay offers a different experience. Your stay will be in a local town where you would get the chance to interact and see the real everyday life of the Maldivian people.</p>
+              <p><a href="#" class="see-more" aria-expanded="false">See more</a></p>
             </div>
           </div>
         </article>
@@ -111,46 +107,50 @@
 
     </main>
     
-    <!-- Discover section -->
+    
     <main class="container mt-4">
-      <h2 class="page-section-title">DISCOVER MALDIVES</h2>
-      <section class="row mt-4 gx-4 gy-4 discover-grid" aria-label="Discover sections">
+  <h2 id="discover" class="page-section-title">DISCOVER MALDIVES</h2>
+  <section id="section-discover" class="row mt-4 gx-4 gy-4 discover" aria-label="Discover sections">
         <article class="col-12 col-md-6">
           <div class="grid-card p-0 h-100">
-            <div class="card-thumb"><img src="src/home.jpg" alt="Geography"></div>
+            <div class="card-thumb"><img src="src/geo.jpg" alt="Geography"></div>
             <div class="p-3">
               <h3 class="card-title">GEOGRAPHY</h3>
-              <p class="card-excerpt">The Maldives is a nation of islands in the Indian Ocean, that spans across the equator. The country is comprised of 1192 islands that stretch along a length of 871 kilometers. While the country cov...</p>
+              <p class="card-excerpt">The Maldives is a nation of islands in the Indian Ocean, that spans across the equator. The country is comprised of 1192 islands that stretch along a length of 871 kilometers. While the country covers an area of approximately 90,000 square kilometers, only about 298 square kilometers of that is dry land.</p>
+                <p><a href="#" class="see-more" aria-expanded="false">See more</a></p>
             </div>
           </div>
         </article>
 
         <article class="col-12 col-md-6">
           <div class="grid-card p-0 h-100">
-            <div class="card-thumb"><img src="src/mald.png" alt="People"></div>
+            <div class="card-thumb"><img src="src/people.jpg" alt="People"></div>
             <div class="p-3">
               <h3 class="card-title">PEOPLE</h3>
-              <p class="card-excerpt">While very little is known about the ancient history of the Maldives scholars and historians believe that the Maldives is an old nation populated well over 2500 years ago. The Maldivian race is the...</p>
+              <p class="card-excerpt">While very little is known about the ancient history of the Maldives, scholars and historians believe that the Maldives is an old nation populated well over 2500 years ago. The Maldivian race is the result of several waves of settlers from different parts of the world, mainly from Southern India and Sri Lanka.</p>
+                <p><a href="#" class="see-more" aria-expanded="false">See more</a></p>
             </div>
           </div>
         </article>
 
         <article class="col-12 col-md-6">
           <div class="grid-card p-0 h-100">
-            <div class="card-thumb"><img src="src/kubo.jpg" alt="Culture"></div>
+            <div class="card-thumb"><img src="src/culture.jpg" alt="Culture"></div>
             <div class="p-3">
               <h3 class="card-title">CULTURE</h3>
-              <p class="card-excerpt">Although home to just over half a million people the Maldives has its own unique culture and traditions. While heavily influenced by various cultures around the rim of the Indian Ocean, the Maldivi...</p>
+              <p class="card-excerpt">Although home to just over half a million people, the Maldives has its own unique culture and traditions. While heavily influenced by various cultures around the rim of the Indian Ocean, the Maldivian way of life is primarily shaped by its island environment and Islamic faith.</p>
+                <p><a href="#" class="see-more" aria-expanded="false">See more</a></p>
             </div>
           </div>
         </article>
 
         <article class="col-12 col-md-6">
           <div class="grid-card p-0 h-100">
-            <div class="card-thumb"><img src="src/poster.jpg" alt="Environment"></div>
+            <div class="card-thumb"><img src="src/environment.jpg" alt="Environment"></div>
             <div class="p-3">
               <h3 class="card-title">THE ENVIRONMENT</h3>
-              <p class="card-excerpt">The Maldives has one of the most delicate environments anywhere on the planet. Coral reefs are the foundation of the islands. They offer protection to the tiny islands as its natural defense system...</p>
+              <p class="card-excerpt">The Maldives has one of the most delicate environments anywhere on the planet. Coral reefs are the foundation of the islands. They offer protection to the tiny islands as its natural defense system, and they are home to the incredible biodiversity of the Maldivian marine life.</p>
+                <p><a href="#" class="see-more" aria-expanded="false">See more</a></p>
             </div>
           </div>
         </article>
@@ -158,15 +158,65 @@
     </main>
     <script>
       (function(){
-        // show Maldives time (Male', UTC+5) instead of local time
+        document.addEventListener('click', function(e){
+          const t = e.target;
+          if(!t.classList.contains('see-more')) return;
+          e.preventDefault();
+          const excerpt = t.closest('.p-3').querySelector('.card-excerpt');
+          if(!excerpt) return;
+          const expanded = excerpt.classList.toggle('expanded');
+          t.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+          t.textContent = expanded ? 'See less' : 'See more';
+        });
+      })();
+    </script>
+    <script>
+      (function(){
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        const sections = [];
+        navLinks.forEach(link => {
+          const href = link.getAttribute('href');
+          if(!href || !href.startsWith('#')) return;
+          const id = href.slice(1);
+          const el = document.getElementById('section-' + id) || document.getElementById(id);
+          if(el) sections.push({id, el, link});
+        });
+
+        if(!sections.length) return;
+
+        navLinks.forEach(link=>{
+          const href = link.getAttribute('href') || '';
+          if(!href.startsWith('#')) return;
+          link.addEventListener('click', ()=>{
+            navLinks.forEach(l=>l.classList.remove('active'));
+            link.classList.add('active');
+          });
+        });
+
+        const observer = new IntersectionObserver((entries)=>{
+          let best = null;
+          entries.forEach(en => {
+            if(en.isIntersecting && (!best || en.intersectionRatio > best.intersectionRatio)) best = en;
+          });
+          if(!best) return;
+          const id = best.target.id.replace(/^section-/, '');
+          navLinks.forEach(l => l.classList.remove('active'));
+          const found = sections.find(s=>s.id===id);
+          if(found) found.link.classList.add('active');
+        },{threshold:[0,0.25,0.5,0.75,1]});
+
+        sections.forEach(s=>observer.observe(s.el));
+      })();
+    </script>
+    <script>
+      (function(){
         function pad(n){return n.toString().padStart(2,'0')}
 
         function maldivesNow(){
           const local = new Date();
-          // local.getTimezoneOffset() is minutes behind UTC (e.g. -60 for UTC+1)
           const localOffsetMin = local.getTimezoneOffset();
-          const maldivesOffsetMin = 5 * 60; // UTC+5
-          const diffMin = maldivesOffsetMin + localOffsetMin; // minutes to add to local time
+          const maldivesOffsetMin = 5 * 60;
+          const diffMin = maldivesOffsetMin + localOffsetMin;
           return new Date(local.getTime() + diffMin * 60000);
         }
 
@@ -191,7 +241,6 @@
         updateTime();
         setInterval(updateTime, 1000);
 
-        // simple dots animation: cycle active dot
         const dots = document.querySelectorAll('.carousel-dots li');
         if(dots.length){
           let idx = 0;
@@ -203,5 +252,21 @@
       })();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center py-3">
+          <small class="text-muted">© <span id="footer-year"></span> Adi. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // set footer year dynamically
+      (function(){
+        const y = new Date().getFullYear();
+        const el = document.getElementById('footer-year');
+        if(el) el.textContent = y;
+      })();
+    </script>
   </body>
 </html>
