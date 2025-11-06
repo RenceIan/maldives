@@ -178,6 +178,8 @@ body{font-family: 'Montserrat', Arial, sans-serif; background:var(--bg); color:v
   .card-thumb img{height:120px}
 }
 
+
+
 .discover .card-thumb img{height:220px}
 @media (max-width:991px){
   .discover .card-thumb img{height:160px}
