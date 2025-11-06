@@ -98,19 +98,27 @@ body{
 		scroll-snap-align: start;
 	}
 
-	/* keep the CTA visible while scrolling */
+	/* keep the CTA visible while scrolling and place it at the top of each image for readability */
 	.hero__content{
 		position:sticky;
-		bottom:14px;
-		z-index:40;
+		top:14px;
+		z-index:60;
 		margin:0 auto;
 		width:100%;
 		display:flex;
 		justify-content:center;
 		pointer-events:auto;
-		padding:0 1rem 0;
+		padding:6px 1rem;
+		backdrop-filter: blur(4px) saturate(120%);
+		-webkit-backdrop-filter: blur(4px) saturate(120%);
 	}
-	.hero__btn{box-shadow:0 10px 30px rgba(0,0,0,0.45);}
+	/* make the CTA pill more legible on top of images on mobile */
+	.hero__btn{
+		box-shadow:0 10px 30px rgba(0,0,0,0.45);
+		background: rgba(0,0,0,0.72);
+		color: #fff;
+		border: 1px solid rgba(255,255,255,0.06);
+	}
 }
 
 /* subtle hover/interaction on larger screens */
